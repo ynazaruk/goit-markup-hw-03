@@ -15,6 +15,8 @@ ul {
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -103,6 +105,10 @@ body {
 
 /*HERO*/
 
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .hero {
   background-color: #2e2f42;
   padding-bottom: 188px;
@@ -110,7 +116,7 @@ body {
 .hero-title {
   width: 496px;
   padding-top: 188px;
-  padding-bottom: 48px;
+  margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
   color: #fff;
@@ -158,19 +164,16 @@ button:focus {
   overflow: hidden;
 }
 
-.benefits-list-item {
-  width: calc((100% - 72px) / 4);
-}
-
 .benefits-list {
   display: flex;
-  gap: 24px;
+  flex-wrap: wrap;
+  column-gap: 24px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 120px;
 }
 
 .benefits-list-item {
+  width: calc((100% - 72px) / 4);
 }
 
 .benefits-item-title {
@@ -195,9 +198,17 @@ button:focus {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
 }
 .team-list-item {
+  width: calc((100%-72px) / 4);
   background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
 }
 .team-item-title {
   color: #2e2f42;
@@ -206,6 +217,7 @@ button:focus {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .team-item-description {
   text-align: center;
@@ -213,14 +225,37 @@ button:focus {
   letter-spacing: 0.02em;
 }
 
-/*OUR ORTFOLIO*/
-.prtfolio-title {
+.team-item-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+/*OUR PORTFOLIO*/
+.portfolio-title {
   color: #2e2f42;
   text-align: center;
   font-size: 36px;
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  padding-bottom: 72px;
+}
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+.portfolio-list-item {
+  width: calc((100%-48px) / 3);
+}
+
+.portfolio-item-container {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+  border: 1px solid #e7e9fc;
 }
 .portfolio-item-title {
   color: #2e2f42;
@@ -228,6 +263,7 @@ button:focus {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .portfolio-item-description {
   line-height: 1.5;
@@ -239,6 +275,7 @@ button:focus {
   background-color: #2e2f42;
 }
 .logo-footer {
+  display: block;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -246,6 +283,8 @@ button:focus {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-top: 101.5px;
+  padding-bottom: 17.5px;
 }
 .logo-color-footer {
   color: #f4f4fd;
@@ -257,7 +296,9 @@ button:focus {
   text-transform: uppercase;
 }
 .description-footer {
+  width: 264px;
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
+  padding-bottom: 100px;
 }
