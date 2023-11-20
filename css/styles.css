@@ -31,7 +31,9 @@ body {
   text-decoration: none;
 }
 /*HEADER*/
-
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
+}
 .container {
   width: 1158px;
   padding-left: 15px;
@@ -42,7 +44,6 @@ body {
 .page-header-container {
   display: flex;
   justify-content: space-between;
-  border-bottom: 1px solid #e7e9fc;
 }
 .page-nav {
   display: flex;
@@ -50,7 +51,7 @@ body {
 }
 
 .logo {
-  padding-right: 76px;
+  margin-right: 76px;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -111,11 +112,11 @@ body {
 }
 .hero {
   background-color: #2e2f42;
+  padding-top: 188px;
   padding-bottom: 188px;
 }
 .hero-title {
-  width: 496px;
-  padding-top: 188px;
+  max-width: 496px;
   margin-bottom: 48px;
   margin-left: auto;
   margin-right: auto;
@@ -127,7 +128,7 @@ body {
 }
 
 .button-hero {
-  display: flex;
+  display: block;
   cursor: pointer;
   background-color: #4d5ae5;
   color: #fff;
@@ -136,10 +137,9 @@ body {
   line-height: 1.5;
   letter-spacing: 0.04em;
   border-radius: 4px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
   margin-left: auto;
   margin-right: auto;
 }
@@ -167,7 +167,7 @@ button:focus {
 .benefits-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
+  gap: 24px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -182,6 +182,7 @@ button:focus {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .benefits-description {
   line-height: 1.5;
@@ -198,15 +199,15 @@ button:focus {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
+  gap: 24px;
 }
 .team-list-item {
-  width: calc((100%-72px) / 4);
+  width: calc((100% - 72px) / 4);
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
 }
@@ -238,7 +239,7 @@ button:focus {
   line-height: 1.11;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 .portfolio-list {
   display: flex;
@@ -247,7 +248,7 @@ button:focus {
   row-gap: 48px;
 }
 .portfolio-list-item {
-  width: calc((100%-48px) / 3);
+  width: calc((100% - 48px) / 3);
 }
 
 .portfolio-item-container {
@@ -256,6 +257,7 @@ button:focus {
   padding-left: 16px;
   padding-right: 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 .portfolio-item-title {
   color: #2e2f42;
@@ -273,9 +275,11 @@ button:focus {
 /*FOOTER*/
 .page-footer {
   background-color: #2e2f42;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 .logo-footer {
-  display: block;
+  display: inline-block;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -283,8 +287,7 @@ button:focus {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
-  padding-top: 101.5px;
-  padding-bottom: 17.5px;
+  margin-bottom: 16px;
 }
 .logo-color-footer {
   color: #f4f4fd;
@@ -300,5 +303,4 @@ button:focus {
   color: #f4f4fd;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-bottom: 100px;
 }
