@@ -1,3 +1,21 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
 body {
   font-family: "Roboto", sans-serif;
   color: #434455;
@@ -12,7 +30,25 @@ body {
 }
 /*HEADER*/
 
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e7e9fc;
+}
+.page-nav {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
+  padding-right: 76px;
   color: #4d5ae5;
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -24,7 +60,14 @@ body {
 .logo-color {
   color: #2e2f42;
 }
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
 .nav-list-link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
   color: #2e2f42;
   font-size: 16px;
   font-weight: 500;
@@ -38,7 +81,13 @@ body {
 }
 
 .menu-contact {
+  display: flex;
   font-style: normal;
+  align-items: center;
+}
+.contact-list {
+  display: flex;
+  gap: 40px;
 }
 .menu-contact-link {
   color: #434455;
@@ -56,15 +105,23 @@ body {
 
 .hero {
   background-color: #2e2f42;
+  padding-bottom: 188px;
 }
 .hero-title {
+  width: 496px;
+  padding-top: 188px;
+  padding-bottom: 48px;
+  margin-left: auto;
+  margin-right: auto;
   color: #fff;
   text-align: center;
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
 }
-button {
+
+.button-hero {
+  display: flex;
   cursor: pointer;
   background-color: #4d5ae5;
   color: #fff;
@@ -72,6 +129,13 @@ button {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
+  border-radius: 4px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  margin-left: auto;
+  margin-right: auto;
 }
 button:hover,
 button:focus {
@@ -79,6 +143,35 @@ button:focus {
 }
 
 /*OUR BENEFITS*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.benefits-list-item {
+  width: calc((100% - 72px) / 4);
+}
+
+.benefits-list {
+  display: flex;
+  gap: 24px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 120px;
+}
+
+.benefits-list-item {
+}
 
 .benefits-item-title {
   color: #2e2f42;
